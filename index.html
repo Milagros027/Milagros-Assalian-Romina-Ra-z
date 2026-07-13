@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raíz</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.24/dist/lenis.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="https://unpkg.com/lenis@1.3.24/dist/lenis.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script defer src="js/script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="header">
+        <nav class="navbar container">
+            <div class="logo">
+               RAÍZ
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#beneficios-animados">Beneficios</a></li>
+                <li><a href="#capsula">Cápsula</a></li>
+                <li><a href="#courses">Cursos</a></li>
+                <li><a href="bibliotecaui.html">Kit UI</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+
+            <button class="hamburger">
+                ☰
+            </button>
+        </nav>
+    </header>
+    
+    
+   <!-- HERO -->
+<section class="hero" id="hero">
+
+    <div class="hero-bg-day"></div>
+    <div class="hero-bg-night"></div>
+    <div class="hero-bg"></div>
+
+    <div class="hero-content container">
+
+        <span class="tag">
+            Diseño que recupera historias
+        </span>
+
+        <h1 class="hero-title">
+            Devolverlas a sus raíces
+        </h1>
+
+
+        <!-- SWITCH -->
+
+        <div class="hero-switch">
+
+            <span>Antes</span>
+
+            <label class="switch">
+
+                <input
+                    type="checkbox"
+                    id="heroToggle"
+                >
+
+                <span class="slider"></span>
+
+            </label>
+
+            <span>Después</span>
+
+        </div>
+
+    </div>
+    
+    
+</section>
+    
+    
+    
+    <!-- BENEFICIOS ANIMADOS -->
+    <section class="scroll-benefits" id="beneficios-animados" aria-label="Beneficios destacados">
+
+        <div class="benefits-sticky">
+
+            <svg class="benefits-arc benefits-arc-top" viewBox="0 0 1517 93" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M0 92.0674C528.5 -28.9327 977.5 -32.4328 1516.5 92.0674H0Z" fill="#FFFBEF"></path>
+            </svg>
+
+            <div class="benefits-intro">
+                <h2>RESTAURAR ES<br>VOLVER A EMPEZAR</h2>
+                <p>Vamos a explicarlo simple</p>
+            </div>
+
+            <div class="benefits-stage container">
+
+                <article class="benefit-card benefit-card-1">
+                    <div class="benefit-card-head">Nueva vida</div>
+                    <div class="benefit-card-body">
+                        <p>Transformamos piezas en objetos únicos, recuperando su esencia y su valor</p>
+                        <span class="benefit-icon benefit-icon-wave"></span>
+                    </div>
+                </article>
+
+                <article class="benefit-card benefit-card-2">
+                    <div class="benefit-card-head">Identidad fuerte</div>
+                    <div class="benefit-card-body">
+                        <p>Conservamos la esencia y el valor histórico de cada pieza</p>
+                        <span class="benefit-icon benefit-icon-flower"></span>
+                    </div>
+                </article>
+
+                <article class="benefit-card benefit-card-3">
+                    <div class="benefit-card-head">Sustentabilidad</div>
+                    <div class="benefit-card-body">
+                        <p>Reutilizamos materiales para darles un nuevo propósito</p>
+                        <span class="benefit-icon benefit-icon-leaf"></span>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="benefits-outro" aria-hidden="true">
+                <h2>ANIMATE</h2>
+
+                <svg class="benefits-bubbles" width="1456" height="363" viewBox="0 0 1456 363" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="1142.34" cy="146" r="10.375" fill="#FFFBEF" stroke="#0E0E0E" stroke-width="1.25"></circle>
+                    <circle cx="411.344" cy="105" r="10.375" fill="#FFFBEF" stroke="#0E0E0E" stroke-width="1.25"></circle>
+                    <circle cx="149.344" cy="196" r="10.375" fill="#FFFBEF" stroke="#0E0E0E" stroke-width="1.25"></circle>
+                    <circle cx="649.344" cy="94" r="10.375" fill="#FFFBEF" stroke="#0E0E0E" stroke-width="1.25"></circle>
+                    <circle cx="781.344" cy="32" r="6.375" fill="#FFFBEF" stroke="#0E0E0E" stroke-width="1.25"></circle>
+                    <circle cx="1098.34" cy="76" r="6.375" fill="#FFFBEF" stroke="#0E0E0E" stroke-width="1.25"></circle>
+                    <circle cx="315.344" cy="7" r="6.375" fill="#FFFBEF" stroke="#0E0E0E" stroke-width="1.25"></circle>
+                </svg>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- PANEL DE FOTOS -->
+    <section class="photo-panel" aria-label="Panel de inspiración">
+        <div class="photo-panel-grid">
+
+            <article class="photo-tile photo-tile-featured">
+                <span></span>
+                <img src="assets/sillonportal.png" alt="Sillón restaurado">
+            </article>
+
+            <article class="photo-tile photo-tile-silla">
+                <span></span>
+                <img src="assets/imagenprueba.jfif" alt="Lámpara restaurada">
+            </article>
+
+            <article class="photo-tile photo-tile-lamp">
+                <span></span>
+                <img src="assets/lamparafoto.png" alt="Lámpara restaurada">
+            </article>
+            
+            <article class="photo-tile photo-tile-3">
+                <span></span>
+                <img src="assets/portal3.png" alt="Silla madera">
+            </article>
+
+            <article class="photo-tile photo-tile-portalmesachica">
+                <span></span>
+                <img src="assets/portalmesachica.png" alt="Silla madera">
+            </article>
+
+            <article class="photo-tile photo-tile-portalmesa">
+                <span></span>
+                 <img src="assets/portalmesa.jpeg" alt="Silla madera">
+            </article>
+
+            <article class="photo-tile photo-tile-mesafinita">
+                <span></span>
+               <img src="assets/mesafinita.png" alt="Silla madera">
+            </article>
+
+            <article class="photo-tile photo-tile-8">
+                <span></span>
+                  <img src="assets/portal8.png" alt="Silla madera">
+            </article>
+
+            <article class="photo-tile photo-tile-mesahorizontal">
+                <span></span>
+                <img src="assets/mesahorizontal.png" alt="Mesa madera">
+            </article>
+
+        </div>
+    </section>
+
+    <!-- CURSOS -->
+    <section class="courses-section" id="courses" aria-label="Cursos de restauración">
+        <div class="courses-container">
+
+            <div class="courses-heading">
+                <span>Nuestros cursos</span>
+                <h2>Una formación<br>para cada objetivo</h2>
+                <p>
+                    Cada proceso requiere habilidades diferentes, por eso nuestros cursos están pensados para acompañar cada transformación
+                </p>
+            </div>
+
+            <div class="courses-grid">
+
+                <article class="course-card">
+                    <div class="course-card-inner">
+                        <div class="course-card-face course-card-front">
+                            <div class="course-card-image course-card-image-warm">
+                                <img src="assets/curso1.jpeg" alt="Curso inicial de restauración">
+                            </div>
+
+                            <span>Inicial</span>
+                            <h3>Preparación y técnica</h3>
+                            <strong>$43.000</strong>
+                            <button class="course-card-toggle">
+    +
+</button>
+
+                        </div>
+
+                        <div class="course-card-face course-card-back">
+                            <span>Inicial</span>
+                            <h3>Preparación y técnica</h3>
+
+                            <div class="course-pills">
+                                <small>2 clase</small>
+                                <small>Presencial</small>
+                                <small>Materiales incluidos</small>
+                                <small>Sin experiencia previa</small>
+                            </div>
+
+                            <p>
+                                Aprendé las técnicas de preparación y restauración para lograr acabados prolijos y duraderos.
+                            </p>
+
+                            <a class="course-enroll-btn" href="rediseño-moderno.html">
+                                <span class="circle1"></span>
+                                <span class="circle2"></span>
+                                <span class="circle3"></span>
+                                <span class="circle4"></span>
+                                <span class="circle5"></span>
+                                <span class="text">Inscribirme →</span>
+                            </a>
+                            <button class="course-card-close">
+    ←
+</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="course-card">
+                    <div class="course-card-inner">
+                        <div class="course-card-face course-card-front">
+                            <div class="course-card-image course-card-image-green">
+                                <img src="assets/curso2.jpeg" alt="Curso de restauración integral">
+                            </div>
+
+                            <span>Básico</span>
+                            <h3>Restauración integral</h3>
+                            <strong>$70.000</strong>
+                            <button class="course-card-toggle">
+    +
+</button>
+                        </div>
+
+                        <div class="course-card-face course-card-back">
+                            <span>Básico</span>
+                            <h3>Restauración integral</h3>
+
+                            <div class="course-pills">
+                                <small>3 clases</small>
+                                <small>Presencial</small>
+                                <small>Técnicas mixtas</small>
+                                <small>Terminación incluida</small>
+                            </div>
+
+                            <p>
+                                Lijado, color y cobertura para transformar un mueble completo.
+                            </p>
+
+                            <a class="course-enroll-btn" href="rediseño-moderno.html">
+                                <span class="circle1"></span>
+                                <span class="circle2"></span>
+                                <span class="circle3"></span>
+                                <span class="circle4"></span>
+                                <span class="circle5"></span>
+                                <span class="text">Inscribirme →</span>
+                            </a>
+                            <button class="course-card-close">
+    ←
+</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="course-card">
+                    <div class="course-card-inner">
+                        <div class="course-card-face course-card-front">
+                            <div class="course-card-image course-card-image-soft">
+                                <img src="assets/curso3.jpeg" alt="Curso avanzado de rediseño estético">
+                            </div>
+
+                            <span>Avanzado</span>
+                            <h3>Rediseño moderno</h3>
+                            <strong>$95.000</strong>
+                            <button class="course-card-toggle">
+    +
+</button>
+                        </div>
+
+                        <div class="course-card-face course-card-back">
+                            <span>Avanzado</span>
+                            <h3>Rediseño moderno</h3>
+
+                            <div class="course-pills">
+                                <small>5 clases</small>
+                                <small>Presencial</small>
+                                <small>Proyecto propio</small>
+                                <small>Asesoría final</small>
+                            </div>
+
+                            <p>
+                                Dominá todas las etapas de la restauración con un curso completo que combina teoría y práctica.
+                            </p>
+
+                            <a class="course-enroll-btn" href="rediseño-moderno.html">
+                                <span class="circle1"></span>
+                                <span class="circle2"></span>
+                                <span class="circle3"></span>
+                                <span class="circle4"></span>
+                                <span class="circle5"></span>
+                                <span class="text">Inscribirme →</span>
+                            </a>
+                            <button class="course-card-close">
+    ←
+</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS CURSOS -->
+    <section class="course-testimonials" aria-label="Testimonios de cursos">
+        <div class="course-testimonial-card">
+            <span class="course-testimonial-pin">
+                <img id="courseTestimonialAvatar" src="assets/avatar-martina.svg" alt="Martina">
+            </span>
+            <span class="course-testimonial-clip" aria-hidden="true"></span>
+
+            <div class="course-testimonial-content">
+                <strong id="courseTestimonialName">@María Paz</strong>
+
+                <p id="courseTestimonialText">
+                    Aprendí que restaurar no era solamente lijar, sino diseñar.
+                </p>
+            </div>
+        </div>
+
+        <div class="course-testimonial-dots" aria-label="Seleccionar testimonio">
+            <button class="course-dot active" type="button" data-course-testimonial="0" aria-label="Testimonio 1"></button>
+            <button class="course-dot" type="button" data-course-testimonial="1" aria-label="Testimonio 2"></button>
+            <button class="course-dot" type="button" data-course-testimonial="2" aria-label="Testimonio 3"></button>
+        </div>
+    </section>
+
+    <!-- AUDIENCIAS / CÍRCULOS EN MOVIMIENTO -->
+    <section class="audience" id="audiences" aria-labelledby="audience-title">
+
+        <div class="audience-sticky">
+
+            <div class="audience-bubbles" aria-hidden="true">
+                <span style="--x:14%; --y:74%; --size:12px; --delay:.05;"></span>
+                <span style="--x:28%; --y:28%; --size:18px; --delay:.18;"></span>
+                <span style="--x:44%; --y:82%; --size:10px; --delay:.32;"></span>
+                <span style="--x:61%; --y:34%; --size:22px; --delay:.46;"></span>
+                <span style="--x:78%; --y:68%; --size:14px; --delay:.60;"></span>
+                <span style="--x:88%; --y:22%; --size:12px; --delay:.72;"></span>
+            </div>
+
+            <div class="audience-heading">
+                <span>APRENDÉ EXPERIMENTADO</span>
+                <h2 id="audience-title">Materiales usados<br>en los trabajos</h2>
+            </div>
+
+            <div class="orbit orbit-left" aria-hidden="true">
+                <div class="orbit-image" style="--angle:-100deg"><img src="assets/maderas.jpeg" alt="Maderas usadas en restauración"></div>
+                <div class="orbit-image" style="--angle:-80deg"><img src="assets/martillo.jpeg" alt="Martillo para restauración"></div>
+                    <div class="orbit-image" style="--angle:-60deg"><img src="assets/lija.jpeg" alt="Lijas para restauración"></div>
+                    <div class="orbit-image" style="--angle:-40deg"><img src="assets/telas.jpeg" alt="Telas para restauración"></div>
+                <div class="orbit-image" style="--angle:-20deg"><img src="assets/Aceite2.jpeg" alt="Aceites para restauración"></div>
+            </div>
+
+            <div class="orbit orbit-right">
+                <article class="orbit-copy" style="--angle:280deg"><div><h3>Maderas</h3><p>Conocé las características de cada madera y cómo intervenirla respetando su estructura original.</p></div></article>
+                <article class="orbit-copy" style="--angle:260deg"><div><h3>Herramientas</h3><p>Utilizamos herramientas profesionales propias</p></div></article>
+                <article class="orbit-copy" style="--angle:240deg"><div><h3>Lijas</h3><p>Tenemos lijas para cualquier tipo de madera</p></div></article>
+                <article class="orbit-copy" style="--angle:220deg"><div><h3>Retazos</h3><p>Aplicamos telas premium y retazos de muebles irrecuperables</p></div></article>
+                <article class="orbit-copy" style="--angle:200deg"><div><h3>Aceites</h3><p>Utilizamos aceites para darle un acabado más prolijo</p></div></article>
+            </div>
+
+ <div class="orbit-list" hidden>
+
+                <article class="orbit-row">
+                    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=500&q=85" alt="Equipo reunido trabajando" loading="lazy">
+                    <div>
+                        <h3>Equipos</h3>
+                        <p>Identidad y herramientas digitales para trabajar mejor juntos.</p>
+                    </div>
+                </article>
+
+                <article class="orbit-row">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=85" alt="Emprendedora sonriendo" loading="lazy">
+                    <div>
+                        <h3>Emprendedores</h3>
+                        <p>Marcas claras y memorables que nacen listas para crecer.</p>
+                    </div>
+                </article>
+
+                <article class="orbit-row">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=500&q=85" alt="Creativa en retrato" loading="lazy">
+                    <div>
+                        <h3>Creativos</h3>
+                        <p>Portfolios y experiencias que hacen visible tu mejor trabajo.</p>
+                    </div>
+                </article>
+
+                <article class="orbit-row">
+                    <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=500&q=85" alt="Profesional en retrato" loading="lazy">
+                    <div>
+                        <h3>Profesionales</h3>
+                        <p>Presencia digital sobria, precisa y con carácter propio.</p>
+                    </div>
+                </article>
+
+                <article class="orbit-row">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=85" alt="Persona en retrato" loading="lazy">
+                    <div>
+                        <h3>Y vos</h3>
+                        <p>Si tenés una idea, podemos encontrar la forma de hacerla destacar.</p>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ESCENA INTERACTIVA -->
+    <section class="room-showcase" aria-label="Muebles restaurados en contexto">
+        <div class="room-showcase-inner">
+
+            <button class="room-tag room-tag-chair" type="button" aria-expanded="false">
+                <span class="room-tag-media">
+                    <img src="assets/iconosillamarron.png" alt="">
+                </span>
+
+                <span class="room-tag-copy">
+                    <strong>Sillas de pino</strong>
+                    <small>Nueva vida</small>
+                </span>
+
+                <span class="room-tag-description">
+                    Estructura reforzada, madera restaurada y asiento retapizado para combinar confort, resistencia y diseño.
+                </span>
+            </button>
+
+            <button class="room-tag room-tag-table" type="button" aria-expanded="false">
+                <span class="room-tag-media room-tag-icon" aria-hidden="true">
+                    <svg viewBox="0 0 64 64" fill="none">
+                        <path d="M15 21h34M22 21l-7 30M42 21l7 30M24 35h16" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+
+                <span class="room-tag-copy">
+                    <strong>Mesa de madera</strong>
+                    <small>Terminación natural</small>
+                </span>
+
+                <span class="room-tag-description">
+                    Madera restaurada, lijada a mano y protegida con aceite natural para resaltar la veta
+                </span>
+            </button>
+
+            <button class="room-tag room-tag-lamp" type="button" aria-expanded="false">
+                <span class="room-tag-media">
+                    <img src="assets/lamparaiconomarron.png" alt="">
+                </span>
+
+                <span class="room-tag-copy">
+                    <strong>Lámpara cálida</strong>
+                    <small>Detalle decorativo</small>
+                </span>
+
+                <span class="room-tag-description">
+                    Pantalla restaurada y reacondicionada con terminaciones artesanales para recuperar su carácter original.
+                </span>
+            </button>
+
+        </div>
+    </section>
+
+    <!-- MUEBLES DE CÁPSULA -->
+    <section class="capsule-furniture" id="capsula" aria-label="Muebles de cápsula">
+        <div class="capsule-heading">
+            <span>Hay muebles esperándote</span>
+            <h2>Muebles de cápsula</h2>
+        </div>
+
+        <div class="capsule-carousel" aria-label="Carrusel de muebles">
+            <div class="capsule-track">
+
+                <article class="capsule-card">
+                    <span class="capsule-hook capsule-hook-left"></span>
+                    <span class="capsule-hook capsule-hook-right"></span>
+                    <img class="capsule-image" src="assets/mueblecapsula1.jpeg" alt="Mueble de cápsula">
+                </article>
+
+                <article class="capsule-card">
+                    <span class="capsule-hook capsule-hook-left"></span>
+                    <span class="capsule-hook capsule-hook-right"></span>
+                    <img class="capsule-image" src="assets/mueblescapsula2.jpeg" alt="Mueble de cápsula">
+                </article>
+
+                <article class="capsule-card">
+                    <span class="capsule-hook capsule-hook-left"></span>
+                    <img class="capsule-image" src="assets/mueblecapsula9.jpeg" alt="Mueble de cápsula">
+                </article>
+
+                <article class="capsule-card">
+                    <span class="capsule-hook capsule-hook-left"></span>
+                    <span class="capsule-hook capsule-hook-right"></span>
+                    <img class="capsule-image" src="assets/mueblecapsula3.jpeg" alt="Mueble de cápsula">
+                </article>
+
+                <article class="capsule-card">
+                    <span class="capsule-hook capsule-hook-left"></span>
+                    <img class="capsule-image" src="assets/mueblecapsula6.jpeg" alt="Mueble de cápsula">
+                </article>
+
+                <article class="capsule-card">
+                    <span class="capsule-hook capsule-hook-left"></span>
+                    <span class="capsule-hook capsule-hook-right"></span>
+                    <img class="capsule-image" src="assets/mueblecapsula4.jpeg" alt="Mueble de cápsula">
+                </article>
+
+                <article class="capsule-card" aria-hidden="true">
+                    <span class="capsule-hook capsule-hook-left"></span>
+                    <img class="capsule-image" src="assets/mueblecapsula8.jpeg" alt="" aria-hidden="true">
+                </article>
+
+                <article class="capsule-card" aria-hidden="true">
+                    <span class="capsule-hook capsule-hook-left"></span>
+                    <span class="capsule-hook capsule-hook-right"></span>
+                    <img class="capsule-image" src="assets/mueblecapsula5.jpeg" alt="" aria-hidden="true">
+                </article>
+
+                <article class="capsule-card" aria-hidden="true">
+                    <span class="capsule-hook capsule-hook-left"></span>
+                    <span class="capsule-hook capsule-hook-right"></span>
+                    <img class="capsule-image" src="assets/mueblecapsula7.jpeg" alt="" aria-hidden="true">
+                </article>
+
+                <article class="capsule-card" aria-hidden="true">
+                    <span class="capsule-hook capsule-hook-left"></span>
+                    <span class="capsule-hook capsule-hook-right"></span>
+                    <img class="capsule-image" src="assets/mueblecapsula10.jpeg" alt="" aria-hidden="true">
+                </article>
+
+                <article class="capsule-card" aria-hidden="true">
+                    <span class="capsule-hook capsule-hook-left"></span>
+                    <span class="capsule-hook capsule-hook-right"></span>
+                    <img class="capsule-image" src="assets/mueblecapsula12.jpeg" alt="" aria-hidden="true">
+                </article>
+
+                <article class="capsule-card" aria-hidden="true">
+                    <span class="capsule-hook capsule-hook-left"></span>
+                    <span class="capsule-hook capsule-hook-right"></span>
+                    <img class="capsule-image" src="assets/mueblecapsula11.jpeg" alt="" aria-hidden="true">
+                </article>
+
+            </div>
+        </div>
+
+        <p class="capsule-footer">Próximamente...</p>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+
+        <div class="container fade-in">
+
+            <h2>
+                ¿Tenés un mueble que merece una segunda vida?
+            </h2>
+
+            <button class="btn primary open-modal cta-action course-enroll-btn">
+                <span class="circle1"></span>
+                <span class="circle2"></span>
+                <span class="circle3"></span>
+                <span class="circle4"></span>
+                <span class="circle5"></span>
+                <span class="text">Contactanos</span>
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- MODAL -->
+    <div class="modal">
+
+        <div class="modal-content">
+
+            <button class="close-modal">
+                ×
+            </button>
+
+            <h3>Solicitá información</h3>
+
+            <form>
+
+                <input type="text" placeholder="Nombre">
+
+                <input type="email" placeholder="Email">
+
+                <textarea placeholder="Contanos tu proyecto"></textarea>
+
+                <button class="btn primary">
+                    Enviar
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" id="contact">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+                <h3>RAÍZ</h3>
+                <p>
+                    Restauración de muebles, formación online y futuras piezas cápsula con mirada contemporánea.
+                </p>
+
+                <a class="footer-top-link" href="#home">
+                    Volver al inicio
+                    <span>↑</span>
+                </a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Secciones</h4>
+                <a href="#home">Home</a>
+                <a href="#beneficios-animados">Beneficios</a>
+                <a href="#capsula">Cápsula</a>
+                <a href="#courses">Cursos</a>
+                <a href="#contact">Contacto</a>
+            </div>
+
+            <div class="footer-column footer-contact">
+                <h4>Contacto</h4>
+                <a href="mailto:hola@raizrestaura.com">soy@raizrestaura.com</a>
+                <p>Buenos Aires, Argentina</p>
+
+                <div class="footer-divider"></div>
+
+                <h4>Redes</h4>
+                <a href="#">Instagram</a>
+                <a href="#">Pinterest</a>
+            </div>
+
+            <div class="footer-column footer-workshop">
+                <h4>El taller</h4>
+
+                <a class="footer-map" href="https://www.google.com/maps" target="_blank" rel="noopener" aria-label="Ver ubicación del taller en Google Maps">
+                    <span class="footer-map-pin"></span>
+                    <span class="footer-map-label">RAÍZ Taller</span>
+                </a>
+
+                <a class="footer-map-link" href="https://www.google.com/maps" target="_blank" rel="noopener">
+                    Ver en Google Maps ↗
+                </a>
+            </div>
+
+        </div>
+
+        <div class="container footer-bottom">
+            <p>© 2026 RAÍZ. Todos los derechos reservados.</p>
+            <p>Restauración de muebles y academia online</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
+
