@@ -4678,3 +4678,82 @@ FIN
     }
 }
 
+/* ========================================================
+   CALIDEZ DE LA MADERA — card blanca sobre imagen
+   ======================================================== */
+
+.warmth-showcase{
+    width:100%;
+    padding:0 0 clamp(36px, 5vw, 72px);
+    background:#FFFBEF;
+    display:grid;
+    place-items:center;
+}
+
+.warmth-showcase-inner{
+    position:relative;
+    width:min(1980px, 100%);
+    height:min(900px, 56.25vw);
+    min-height:620px;
+    overflow:hidden;
+    background:
+        linear-gradient(rgba(25, 20, 15, .06), rgba(25, 20, 15, .1)),
+        url("../assets/tallerayuda.jpeg") center / cover no-repeat;
+}
+
+.warmth-card{
+    position:absolute;
+    left:50%;
+    bottom:clamp(24px, 5%, 56px);
+    transform:translateX(-50%);
+    width:min(480px, 88%);
+    background:#fff;
+    border-radius:24px;
+    padding:clamp(28px, 4vw, 40px) clamp(28px, 4vw, 36px);
+    box-shadow:0 24px 54px rgba(20, 14, 8, .28);
+}
+
+.warmth-card h2{
+    font-size:clamp(1.5rem, 2.4vw, 1.9rem);
+    font-weight:700;
+    letter-spacing:-.02em;
+    line-height:1.1;
+    color:#163f25;
+    margin-bottom:10px;
+}
+
+.warmth-card p{
+    font-size:.95rem;
+    line-height:1.5;
+    color:#5c5349;
+}
+
+@media (max-width:768px){
+    .warmth-showcase{
+        padding:0 0 54px;
+    }
+
+    .warmth-showcase-inner{
+        height:620px;
+        min-height:620px;
+        background-position:center;
+    }
+
+    .warmth-card{
+        width:min(320px, calc(100% - 40px));
+        bottom:20px;
+        padding:22px 22px;
+    }
+
+    .warmth-card h2{
+        font-size:1.4rem;
+    }
+
+    .warmth-card p{
+        font-size:.86rem;
+    }
+}
+
+
+
+
